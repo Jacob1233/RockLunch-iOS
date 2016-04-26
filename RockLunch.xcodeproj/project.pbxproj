@@ -13,6 +13,11 @@
 		8755E1DE1CD00E64009D6470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8755E1DD1CD00E64009D6470 /* Assets.xcassets */; };
 		8755E1E11CD00E64009D6470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8755E1DF1CD00E64009D6470 /* LaunchScreen.storyboard */; };
 		8755E1EC1CD00E64009D6470 /* RockLunchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755E1EB1CD00E64009D6470 /* RockLunchUITests.swift */; };
+		8755E1FB1CD01B97009D6470 /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755E1F61CD01B97009D6470 /* CSS.swift */; };
+		8755E1FC1CD01B97009D6470 /* Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755E1F71CD01B97009D6470 /* Kanna.swift */; };
+		8755E1FD1CD01B97009D6470 /* libxmlHTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755E1F81CD01B97009D6470 /* libxmlHTMLDocument.swift */; };
+		8755E1FE1CD01B97009D6470 /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755E1F91CD01B97009D6470 /* libxmlHTMLNode.swift */; };
+		8755E1FF1CD01B97009D6470 /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755E1FA1CD01B97009D6470 /* libxmlParserOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,13 @@
 		8755E1E71CD00E64009D6470 /* RockLunchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockLunchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8755E1EB1CD00E64009D6470 /* RockLunchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockLunchUITests.swift; sourceTree = "<group>"; };
 		8755E1ED1CD00E64009D6470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8755E1F61CD01B97009D6470 /* CSS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSS.swift; sourceTree = "<group>"; };
+		8755E1F71CD01B97009D6470 /* Kanna.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kanna.swift; sourceTree = "<group>"; };
+		8755E1F81CD01B97009D6470 /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = libxmlHTMLDocument.swift; sourceTree = "<group>"; };
+		8755E1F91CD01B97009D6470 /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = libxmlHTMLNode.swift; sourceTree = "<group>"; };
+		8755E1FA1CD01B97009D6470 /* libxmlParserOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = libxmlParserOption.swift; sourceTree = "<group>"; };
+		8755E2011CD01BB3009D6470 /* libxml2-kanna.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libxml2-kanna.h"; sourceTree = "<group>"; };
+		8755E2021CD01BB3009D6470 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,12 @@
 				8755E1DD1CD00E64009D6470 /* Assets.xcassets */,
 				8755E1DF1CD00E64009D6470 /* LaunchScreen.storyboard */,
 				8755E1E21CD00E64009D6470 /* Info.plist */,
+				8755E1F61CD01B97009D6470 /* CSS.swift */,
+				8755E1F71CD01B97009D6470 /* Kanna.swift */,
+				8755E1F81CD01B97009D6470 /* libxmlHTMLDocument.swift */,
+				8755E1F91CD01B97009D6470 /* libxmlHTMLNode.swift */,
+				8755E1FA1CD01B97009D6470 /* libxmlParserOption.swift */,
+				8755E2001CD01BB3009D6470 /* Modules */,
 			);
 			path = RockLunch;
 			sourceTree = "<group>";
@@ -94,6 +112,15 @@
 				8755E1ED1CD00E64009D6470 /* Info.plist */,
 			);
 			path = RockLunchUITests;
+			sourceTree = "<group>";
+		};
+		8755E2001CD01BB3009D6470 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8755E2011CD01BB3009D6470 /* libxml2-kanna.h */,
+				8755E2021CD01BB3009D6470 /* module.modulemap */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +226,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8755E1FE1CD01B97009D6470 /* libxmlHTMLNode.swift in Sources */,
 				8755E1D91CD00E64009D6470 /* ViewController.swift in Sources */,
 				8755E1D71CD00E64009D6470 /* AppDelegate.swift in Sources */,
+				8755E1FB1CD01B97009D6470 /* CSS.swift in Sources */,
+				8755E1FD1CD01B97009D6470 /* libxmlHTMLDocument.swift in Sources */,
+				8755E1FF1CD01B97009D6470 /* libxmlParserOption.swift in Sources */,
+				8755E1FC1CD01B97009D6470 /* Kanna.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +315,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				"SWIFT_INCLUDE_PATHS[arch=*]" = "$(SRCROOT)/RockLunch/Modules";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -322,6 +355,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				"SWIFT_INCLUDE_PATHS[arch=*]" = "$(SRCROOT)/RockLunch/Modules";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -331,7 +365,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = RockLunch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aquarii.RockLunch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -342,7 +378,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = RockLunch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aquarii.RockLunch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
