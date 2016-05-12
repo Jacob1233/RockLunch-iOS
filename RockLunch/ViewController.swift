@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         
         // Send the request
         // http://stackoverflow.com/questions/26364914/http-request-in-swift-with-post-method
-        let request = NSMutableURLRequest(URL: NSURL(string: "http://myschooldining.com/Rockhurst%20High%20School/calendarWeek")!)  // change plist to allow arbitrary connections becuase http
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://myschooldining.com/RockhurstHighSchool/calendarWeek")!)  // change plist to allow arbitrary connections becuase http
         request.HTTPMethod = "POST"
         request.HTTPBody = parameters!.dataUsingEncoding(NSUTF8StringEncoding)
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
